@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{  
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--VerydarkblueBG: hsl(217, 54%, 11%);
+--Verydarkbluecard: hsl(216, 50%, 16%);
+--Verydarkblue: hsl(215, 32%, 27%);
+--White:hsl(0, 0%, 100%);
+}
+body{
+background-color: var(--VerydarkblueBG);
+font-family: 'Outfit';
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_container{
+    background-color: var(--Verydarkbluecard);
+    border-radius: 15px;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    box-shadow: 0px 25px 0px  15px rgba(0, 0, 0, 0.08);
+}
+h2{
+    color: var(--White);
+    margin: 20px 0px;
+    font-weight: 500;
+}
+p{
+    color: var(--Softblue);
+    margin-bottom: 20px;
+}
+.bar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rigth_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_item span{
+    margin-left: .4em;
+    color: var(--Cyan);
+}
+.rigth_item span{
+    margin-left: .4em;
+    color: var(--Softblue);
+}
+main{
+    margin-bottom: 30px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 2px solid hsla(215, 32%, 27%, 0.6);
+    padding-top: 15px;
+}
+footer img{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.span_container{
+    margin-left: .8em;
+    color: var(--Softblue);
+}
+.name{
+    color: var(--White) !important;
+    opacity: .8;
+}
+.images_container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/image-equilibrium.jpg);
+    width: 100%;
+    height:300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.images_container:hover{
+    cursor: pointer;
+    background:linear-gradient(90deg, hsla(182, 100%, 50%, 0.493) 100%, hsla(178, 100%, 50%, 0.486)), url(images/image-equilibrium.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+h2:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.name:hover{
+    cursor: pointer;
+    color: var(--Cyan) !important;
+}
+
+.view_container{
+    opacity: 0;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:100%;
+}
+.view_container:hover{
+    opacity: 1;
+}

@@ -13,7 +13,7 @@
 }
 body{
 background-color: var(--VerydarkblueBG);
-font-family: 'Outfit';
+font-family: 'Outfit', sans-serif;
 }
 .container{
     width: 100%;
